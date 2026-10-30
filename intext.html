@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart Farm IoT Monitoring System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>🌱 Smart Farm IoT Monitoring System</h1>
+
+    <p>IoT-based Smart Agriculture Monitoring</p>
+
+</header>
+
+
+<main>
+
+
+    <!-- Farm Status -->
+
+    <div class="status-box">
+
+        <h2>Farm Status</h2>
+
+        <div id="farmStatus" class="status healthy">
+
+            Healthy Conditions
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Sensor Cards -->
+
+    <div class="sensor-container">
+
+
+        <div class="sensor-card">
+
+            <h3>💧 Soil Moisture</h3>
+
+            <div id="moisture" class="sensor-value">
+
+                --%
+
+            </div>
+
+            <p>Recommended: 30% - 70%</p>
+
+        </div>
+
+
+
+        <div class="sensor-card">
+
+            <h3>🌡️ Temperature</h3>
+
+            <div id="temperature" class="sensor-value">
+
+                --°C
+
+            </div>
+
+            <p>Recommended: 18°C - 35°C</p>
+
+        </div>
+
+
+
+        <div class="sensor-card">
+
+            <h3>☀️ Light Level</h3>
+
+            <div id="light" class="sensor-value">
+
+                --%
+
+            </div>
+
+            <p>Recommended: 30% - 90%</p>
+
+        </div>
+
+
+
+        <div class="sensor-card">
+
+            <h3>💨 Humidity</h3>
+
+            <div id="humidity" class="sensor-value">
+
+                --%
+
+            </div>
+
+            <p>Environmental measurement</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Simulation -->
+
+    <div class="controls">
+
+        <h2>Simulation Controls</h2>
+
+        <p>Select a farm condition to test the system:</p>
+
+
+        <select id="scenario">
+
+            <option value="automatic">
+                Automatic Simulation
+            </option>
+
+            <option value="healthy">
+                Healthy Conditions
+            </option>
+
+            <option value="dry">
+                Dry Soil
+            </option>
+
+            <option value="hot">
+                High Temperature
+            </option>
+
+            <option value="lowlight">
+                Low Light
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <!-- Alerts -->
+
+    <div class="alerts">
+
+        <h2>⚠️ Alerts</h2>
+
+        <div id="alertBox">
+
+            <p class="no-alert">
+                No alerts at the moment.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- History -->
+
+    <div class="history">
+
+        <h2>📊 Sensor Reading History</h2>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Time</th>
+
+                    <th>Moisture</th>
+
+                    <th>Temperature</th>
+
+                    <th>Light</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="historyTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+    <!-- About -->
+
+    <div class="about">
+
+        <h2>About This Prototype</h2>
+
+        <p>
+
+            This prototype demonstrates an IoT-based smart
+            farming monitoring system.
+
+        </p>
+
+        <p>
+
+            Sensor readings are simulated using JavaScript
+            because physical IoT hardware is not being used
+            during this development stage.
+
+        </p>
+
+        <p>
+
+            The system monitors environmental conditions and
+            provides alerts when readings become unsuitable
+            for crop growth.
+
+        </p>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    Smart Farm IoT Prototype
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
